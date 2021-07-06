@@ -125,7 +125,8 @@ main {
 
 canvas {
     border: 1px solid #1A2A32;
-    max-width: 100%;
+    max-width: 98vw;
+    max-height: 98vh;
 }
 /*                                      
 $$$$$$$$\                   $$\                         
