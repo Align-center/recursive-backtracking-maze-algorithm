@@ -1,0 +1,138 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: #1A2A32;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+/*
+$$\      $$\           $$\           
+$$$\    $$$ |          \__|          
+$$$$\  $$$$ | $$$$$$\  $$\ $$$$$$$\  
+$$\$$\$$ $$ | \____$$\ $$ |$$  __$$\ 
+$$ \$$$  $$ | $$$$$$$ |$$ |$$ |  $$ |
+$$ |\$  /$$ |$$  __$$ |$$ |$$ |  $$ |
+$$ | \_/ $$ |\$$$$$$$ |$$ |$$ |  $$ |
+\__|     \__| \_______|\__|\__|  \__|*/
+
+aside {
+    width: 20vw;
+    max-width: 300px;
+    height: 100vh;
+    background: #EEF3F6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 32px 16px 0;
+    transition: all ease-in-out .3s;
+}
+
+aside.hidden {
+    left: -300px;
+}
+
+aside > svg {
+    width: 20px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+
+aside ul {
+    list-style: none;
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+aside ul li {
+    margin: 8px 0;
+}
+
+.btn {
+    border: none;
+    background: hsl(202, 32%, 50%);
+    padding: 6px 16px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+
+.btn:hover {
+    background: hsl(202, 32%, 30%);
+}
+
+.input {
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.input input {
+    width: 30%;
+}
+
+.download {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    width: fit-content;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.burger {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    width: 20px;
+}
+
+.burger.hidden {
+    display: none;
+}
+
+canvas {
+    border: 1px solid #1A2A32;
+    max-width: 100%;
+}
+/*                                      
+$$$$$$$$\                   $$\                         
+$$  _____|                  $$ |                        
+$$ |    $$$$$$\   $$$$$$\ $$$$$$\    $$$$$$\   $$$$$$\  
+$$$$$\ $$  __$$\ $$  __$$\\_$$  _|  $$  __$$\ $$  __$$\ 
+$$  __|$$ /  $$ |$$ /  $$ | $$ |    $$$$$$$$ |$$ |  \__|
+$$ |   $$ |  $$ |$$ |  $$ | $$ |$$\ $$   ____|$$ |      
+$$ |   \$$$$$$  |\$$$$$$  | \$$$$  |\$$$$$$$\ $$ |      
+\__|    \______/  \______/   \____/  \_______|\__|     */ 

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backtracking Recursive maze generator - Lucas Frech</title>
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="main.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside>
+
+        <svg class="close-btn" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.11876 9.50001L.996887 16.6219l1.381253 1.3812 7.12187-7.1218 7.12189 7.1218 1.3812-1.3812-7.1218-7.12189 7.1218-7.12187L16.6219.996887 9.50001 8.11876 2.37814.996887.996887 2.37814 8.11876 9.50001z" fill="#000"/>
+        </svg>
+          
+
+        <h1>Maze Generator - Lucas Frech</h1>
+
+        <nav>
+
+            <ul>
+                <li><button class="btn small">Small</button></li>
+                <li><button class="btn medium">Medium</button></li>
+                <li><button class="btn large">Large</button></li>
+                <li><button class="btn custom">Custom</button></li>
+            </ul>
+        </nav>
+
+        <section>
+
+            <h2>Custom dimensions : </h2>
+
+            <article class="input">
+
+                <label for="width">Width :</label>
+
+                <input type="text" name="width" id="width" placeholder="20">
+
+                <p>cells</p>
+            </article>
+
+            <article class="input">
+                <label for="height">Height :</label>
+
+                <input type="text" name="height" id="height" placeholder="20">
+
+                <p>cells</p>
+            </article>
+        </section>
+
+        <a href="" class="download btn" download="">Download Maze</a>
+    </aside>
+    <main>
+        
+        <svg class="burger hidden" viewBox="0 -53 384 384" xmlns="http://www.w3.org/2000/svg">
+            <path d="M368 154.667969H16c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0M368 32H16C7.167969 32 0 24.832031 0 16S7.167969 0 16 0h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0M368 277.332031H16c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/>
+        </svg>
+          
+
+        <canvas></canvas>
+    </main>
+</body>
+</html>
